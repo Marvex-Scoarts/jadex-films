@@ -3,7 +3,7 @@
 **Original Streaming Experience** — A luxury cinema and movie streaming platform UI built from scratch with HTML, CSS, and JavaScript.
 
 ## About the Project
-Jadex Films is a curated, horror-free streaming interface celebrating glamorous dramas, feel-good romance, high-fashion stories, and uplifting adventures.
+Jadex Films is a curated streaming interface celebrating glamorous dramas, feel-good romance, high-fashion stories, and uplifting adventures.
 
 ## Design & Aesthetic
 * **VIP Cinema Color Palette:** Combines deep Midnight Theater Black and Royal Velvet Plum surfaces with Rose Gold and Champagne Gold gradient highlights.
