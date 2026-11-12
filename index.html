@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JADEX FILMS | Stream Cinema & Series</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="brand-logo">JADEX FILMS</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#romance">Romance &amp; Drama</a></li>
+          <li><a href="#lifestyle">Fashion &amp; Adventure</a></li>
+          <li><a href="#mylist">My List (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <div class="profile-badge">BESTIES</div>
+    </div>
+  </header>
+
+  <!-- Featured Movie Hero Section -->
+  <section id="home" class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="featured-tag">JADEX ORIGINAL PREMIERE</span>
+      <h1>RUNWAY IN PARIS</h1>
+      <div class="movie-meta">
+        <span class="match-score">99% Match</span>
+        <span>2026</span>
+        <span class="age-rating">PG</span>
+        <span>2h 05m</span>
+        <span class="quality-badge">4K HDR</span>
+      </div>
+      <p class="hero-synopsis">
+        Two best friends from Lagos launch an independent couture house in Paris, navigating rival designers, whirlwind romance, and the biggest fashion week of their lives.
+      </p>
+      <div class="hero-actions">
+        <button class="btn play-btn">&#9654; Play Now</button>
+        <button class="btn list-btn" data-title="Runway in Paris">+ My List</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movie Categories Container -->
+  <main class="catalog">
+
+    <!-- Category 1: Trending Now -->
+    <section id="trending" class="category-row">
+      <h2>Trending on Jadex Films</h2>
+      <div class="poster-track">
+        <article class="movie-card">
+          <img src="midnight.jpg" alt="Midnight in Lagos">
+          <div class="card-info">
+            <h3>Midnight in Lagos</h3>
+            <p class="card-meta">99% Match &bull; Romance</p>
+            <button class="add-list-btn" data-title="Midnight in Lagos">+ My List</button>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="golden-atelier.jpg" alt="The Golden Atelier">
+          <div class="card-info">
+            <h3>The Golden Atelier</h3>
+            <p class="card-meta">96% Match &bull; Drama</p>
+            <button class="add-list-btn" data-title="The Golden Atelier">+ My List</button>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="amalfi-summer.jpg" alt="Amalfi Summer">
+          <div class="card-info">
+            <h3>Amalfi Summer</h3>
+            <p class="card-meta">95% Match &bull; Comedy</p>
+            <button class="add-list-btn" data-title="Amalfi Summer">+ My List</button>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="crown_of_diamonds.jpg" alt="Crown of Diamonds">
+          <div class="card-info">
+            <h3>Crown of Diamonds</h3>
+            <p class="card-meta">97% Match &bull; Royalty</p>
+            <button class="add-list-btn" data-title="Crown of Diamonds">+ My List</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Category 2: Romance & Feel-Good Drama -->
+    <section id="romance" class="category-row">
+      <h2>Romance &amp; Feel-Good Cinema</h2>
+      <div class="poster-track">
+        <article class="movie-card">
+          <img src="letter.jpg" alt="Letters to Victoria Island">
+          <div class="card-info">
+            <h3>Letters to Victoria Island</h3>
+            <p class="card-meta">98% Match &bull; Romance</p>
+            <button class="add-list-btn" data-title="Letters to Victoria Island">+ My List</button>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="starlight.jpg" alt="Starlight Symphony">
+          <div class="card-info">
+            <h3>Starlight Symphony</h3>
+            <p class="card-meta">94% Match &bull; Musical</p>
+            <button class="add-list-btn" data-title="Starlight Symphony">+ My List</button>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="beyond.jpg" alt="Beyond the Horizon">
+          <div class="card-info">
+            <h3>Beyond the Horizon</h3>
+            <p class="card-meta">93% Match &bull; Adventure</p>
+            <button class="add-list-btn" data-title="Beyond the Horizon">+ My List</button>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="velvet.jpg" alt="Velvet & Champagne">
+          <div class="card-info">
+            <h3>Velvet &amp; Champagne</h3>
+            <p class="card-meta">96% Match &bull; Lifestyle</p>
+            <button class="add-list-btn" data-title="Velvet & Champagne">+ My List</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- Overlay -->
+  <div class="jf-overlay" id="jfOverlay"></div>
+
+  <!-- Watchlist Drawer -->
+  <aside class="list-drawer" id="listDrawer">
+    <div class="drawer-header">
+      <h3>MY VIP LIST</h3>
+      <button class="jf-close-btn" id="closeListBtn">&times;</button>
+    </div>
+    <div class="drawer-items" id="savedListContainer">
+      <p style="color:#B6ACC7; text-align:center; margin-top:2rem;">Your Jadex Films watchlist is empty.</p>
+    </div>
+  </aside>
+
+  <!-- Trailer Modal -->
+  <div class="trailer-modal" id="trailerModal">
+    <div class="trailer-screen">
+      <button class="jf-close-btn" id="closeTrailerBtn" style="position:absolute; top:1rem; right:1.3rem;">&times;</button>
+      <div class="pulse-play">&#9654;</div>
+      <span style="letter-spacing:3px; font-size:0.8rem; color:#E5A495; font-weight:600;">NOW STREAMING IN 4K HDR</span>
+      <h2 id="trailerTitle" style="font-family:'Cinzel', serif; font-size:2rem; margin-top:0.4rem;">RUNWAY IN PARIS</h2>
+    </div>
+    <div class="trailer-details">
+      <div>
+        <h3>Official VIP Premiere Preview</h3>
+        <p>Jadex Films Original &bull; Dolby Atmos &bull; English &amp; French Subtitles</p>
+      </div>
+      <button class="btn play-btn" id="modalAddBtn" data-title="Runway in Paris">+ Add to My List</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 JADEX FILMS. Original Streaming Experience.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
